@@ -1,7 +1,5 @@
 <?php
-  // File for function
   require '../model/data.php';
-
   // condition delete all project
   if (isset($_POST['sendProject']) AND isset($_POST['project_id']))
   {
@@ -12,6 +10,7 @@
       $deleteProject = deleteProject($_POST['project_id']);
     }
   }
+
   $donnee = allProjects();
 
   include '../view/indexView.php';

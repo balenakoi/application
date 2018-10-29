@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../view/css/main.css">
   </head>
   <body class="body">
-    <!-- Start Header -->
+
     <header>
       <nav class="navbar navbar-inverse bg-inverse border-danger">
         <div class="row d-flex justify-content-between mx-2">
@@ -24,4 +24,4 @@
         </div>
       </nav>
     </header>
-<!-- End header -->
+

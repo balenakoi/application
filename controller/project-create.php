@@ -1,5 +1,5 @@
 <?php
-  // File for function
+  // verifactions for the name
   include '../model/data.php';
   if (isset($_POST['send'])) {
       $name = $_POST['name'];
@@ -13,11 +13,6 @@
           } else {
             setFlashError('parametre mauvais');
           }
-      } else {
-          # code...
       }
-  } else {
-      # code...
-  }
-  // File for HTML and CSS
+  } 
   include '../view/project-createView.php';

@@ -1,6 +1,6 @@
 <?php
-  // File for function
   include '../model/data.php';
+
   if (isset($_POST['send'])) {
       $name = $_POST['name'];
       $project_id = $_POST['project_id'];
@@ -13,5 +13,5 @@
   } else {
       # code...
   }
-  // File for HTML and CSS
+
   include '../view/list-createView.php';

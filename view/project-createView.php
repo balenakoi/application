@@ -1,13 +1,17 @@
 <?php
-  // File for Header
+
   include 'template/header.php';
 ?>
+
+<!-- navbar -->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Create project</li>
   </ol>
 </nav>
+
+<!-- creating projects -->
   <div class="container py-3">
     <div class="row d-flex justify-content-center">
       <div class="card card-outline-secondary bg-faded mt-5">

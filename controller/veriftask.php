@@ -1,5 +1,8 @@
 <?php
+
 include '../model/db.php';
+
+//verifiactions for the tasks
 if (!empty($_POST['checked'])) {
   $verif = $bdd->prepare('UPDATE tasks SET checked = 1 WHERE id = :taskid');
   $verif->execute(array(

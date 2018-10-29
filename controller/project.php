@@ -1,5 +1,4 @@
 <?php
-  // File for function
   include '../model/data.php';
   // condition delete all project
   if (isset($_POST['deleteproject'])) {
@@ -22,5 +21,5 @@
   }
   $donneesProject = getProject($_GET['project_id']);
   $donnee = getProjectLists($_GET['project_id']);
-  // File for HTML and CSS
+
   include '../view/projectView.php';

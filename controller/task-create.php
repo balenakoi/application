@@ -1,5 +1,5 @@
 <?php
-  // File for function
+  // verifactions for the name and deadline
   include '../model/data.php';
   if (isset($_POST['send'])) {
       $name = $_POST['name'];
@@ -13,5 +13,4 @@
     }
 
 
-  // File for HTML and CSS
   include '../view/task-createView.php';

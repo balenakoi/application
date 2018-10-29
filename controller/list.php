@@ -1,10 +1,12 @@
 <?php
 include '../model/data.php';
 
-// TODO: verifications  list_id available
+// verifications  list_id available
 $list = getList($_GET['list_id']);
-// TODO: verification list exists
+
+// verification list exists
 $tasks = getListTasks($_GET['list_id']);
+
 // condition delete tasks
 if (isset($_POST['list_id'])) {
   if (!empty($_POST['list_id'])) {

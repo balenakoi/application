@@ -2,6 +2,7 @@
   // File for Header
   include 'template/header.php'; ?>
 
+ <!-- navbar -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -12,7 +13,7 @@
     <strong class="btn btn-primary mt-3">Add Project</strong>
   </a>
 
-  <!-- Boucle Project -->
+  <!-- Boucle Projects -->
 <?php
 if (is_array($donnee)) {
  foreach ($donnee as $donnees) {

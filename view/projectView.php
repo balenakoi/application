@@ -3,12 +3,15 @@
     include 'template/header.php';
   ?>
 
+<!-- navbar -->
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.php">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">View project</li>
     </ol>
   </nav>
+
+  <!-- show projects -->
     <div class="container">
       <div class="card text-center mt-5">
           <p>Name :</p>
@@ -21,6 +24,7 @@
             <p>Limit date :</p>
             <p class="card-text"><?php echo $donneesProject['deadline']; ?></p>
             <div class="d-flex justify-content-center">
+
               <!-- Button Add Project -->
               <a href="../controller/list-create.php?project_id=<?php echo $_GET['project_id']; ?>">
                 <strong class="btn btn-primary mt-3">Add List</strong>
@@ -30,6 +34,7 @@
         </div>
       </div>
       <div class="container px-5 mb-5">
+
         <!-- Boucle list -->
         <?php
           foreach ($donnee as $donnees) {
@@ -38,6 +43,8 @@
             <div class="card-header">
               <div class="row">
                 <h3>List: <?php echo $donnees['name']; ?> </h3>
+
+                <!-- button delete lists -->
                 <form action="" method="post">
                   <input type="hidden" name="list_id" value="<?php echo $donnees['id']; ?>">
                   <input type="submit" name="deletlist" value="Delete List" class="btn btn-danger ml-1">
@@ -48,6 +55,7 @@
                 <div class="row m-1">
                   <div class="card m-1 mx-auto" style="width: 20rem;">
                   <?php
+                  
                     // Boucle task
                     $donneestask = getListTasks($donnees['id']);
                     foreach ($donneestask as $key => $value) { ?>
