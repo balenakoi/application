@@ -107,9 +107,9 @@ textarea {
   }
   
   .nav{
-    display: flex;
+   display: flex;
    justify-content:space-between;
-   background: 	#00CED1;
+   background: 	black;
    height: 100px;
   }
   
@@ -125,10 +125,6 @@ textarea {
     padding-top: 30px;
   }
   
-  .logo{
-    padding-right: 400px;
-    padding-top: 30px;
-  }
   .accueil{
   text-align: center;
   padding-top: 30px;
@@ -136,15 +132,15 @@ textarea {
   
   
   .nav a:hover{
-    color: black;
+    color: white;
   }
   
   .nav a:focus{
-    color: black;
+    color: white;
   }
   
   a {
-    color: black;
+    color: white;
     font-size: 25px;
   }
    a:link{

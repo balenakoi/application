@@ -26,8 +26,8 @@
 
               <p id="retour_connexion"></p>
               <form class="form" action="controller/connexion_modele.php" method="post">
-                  <label for="pseudo">Pseudo</label> : <input type="text" name="pseudo" id="pseudo"/><br/>
-                  <label for="pass">Mot de passe</label> : <input type="password" name="pass" id="pass"/><br/>
+                  <label for="pseudo">Pseudo</label> : <input placeholder="pseudo" type="text" name="pseudo" id="pseudo"/><br/>
+                  <label for="pass">Mot de passe</label> : <input placeholder="password" type="password" name="pass" id="pass"/><br/>
                   <input type="submit" value="Envoyer"/ style="width:100%;">
 
               </form>
