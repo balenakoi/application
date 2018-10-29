@@ -17,7 +17,7 @@
 <body>
 
   <div class="nav">
-      <div class="déconnexion"><a href = "index.php">Deconnexion</a></div>
+      <div class="déconnexion"><a href = "../inscription_vue.php">Deconnexion</a></div>
 
   </div>
 
@@ -34,7 +34,7 @@ if (isset($_POST['pseudo']) AND isset($_POST['pass']))
 {
   if (!empty($_POST['pseudo']) AND !empty($_POST['pass']))
   {
-      $req = $bdd->prepare('SELECT id, pass FROM todo WHERE pseudo = :pseudo');
+      $req = $bdd->prepare('SELECT id, pass FROM account WHERE pseudo = :pseudo');
       $req->execute(array(
        'pseudo' => $pseudo));
         $resultat = $req->fetch();
