@@ -17,8 +17,7 @@
 <body>
 
   <div class="nav">
-      <div class="déconnexion"><a href = "../inscription_vue.php">Deconnexion</a></div>
-
+    <div class="déconnexion"><a href = "../inscription_vue.php">Deconnexion</a></div>
   </div>
 
 

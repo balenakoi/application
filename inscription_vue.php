@@ -26,9 +26,9 @@
 
               <p id="retour_connexion"></p>
               <form class="form" action="controller/inscription_modele.php" method="post">
-                  <label for="pseudo">Pseudo</label> : <input type="text" name="pseudo" id="pseudo"/><br/>
-                  <label for="pass">Mot de passe</label> : <input type="password" name="pass" id="pass"/><br/>
-                  <label for="confirm mot pass">confirm mot pass :</label><input placeholder="mdp2" type="password" name="pass2"/><br>
+                  <label for="pseudo">Pseudo</label> : <input placeholder="pseudo" type="text" name="pseudo" id="pseudo"/><br/>
+                  <label for="pass">Mot de passe</label> : <input placeholder="password" type="password" name="pass" id="pass"/><br/>
+                  <label for="confirm mot pass">confirm mot pass :</label><input placeholder="confirm mot pass" type="password" name="pass2"/><br>
                   <label for="email">mail :</label><input placeholder="mail" type="email" name="mail"/><br>
                   <input type="submit" value="Envoyer"/ style="width:100%;">
                   
