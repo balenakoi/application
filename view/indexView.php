@@ -29,7 +29,7 @@ if (is_array($donnee)) {
           <p>Limit date :</p>
           <p class="card-text"><?php echo $donnees['deadline']; ?></p>
           <div class="d-flex justify-content-center">
-            <a class="btn btn-primary mr-1" href="project.php?project_id=<?php echo $donnees['id']; ?>">See more</a>
+            <a class="btn btn-primary mr-1 mt-3" href="project.php?project_id=<?php echo $donnees['id']; ?>">See more</a>
             <!-- Button Delete Project -->
             <form action='' method="post">
               <input type="hidden" name="project_id" value="<?php echo $donnees['id']; ?>">
